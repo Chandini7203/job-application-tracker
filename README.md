@@ -11,8 +11,7 @@ A modern, beautiful web app to help you track your job applications easily!
 - Animated feedback cards and “toast” notifications
 
 ## Screenshots
-
-![Uploading image.png…]()
+<img width="722" height="635" alt="image" src="https://github.com/user-attachments/assets/912469d3-c630-4349-adb6-a3c53a58852a" />
 
 
 ## How To Use
