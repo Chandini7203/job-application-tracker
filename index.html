@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Application Tracker</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-briefcase"></i> Job Application Tracker</h1>
+    <form id="appForm">
+      <label for="company"><i class="fas fa-building"></i><span>Company Name</span></label>
+      <input type="text" id="company" required placeholder="Enter company name"/>
+      
+      <label for="position"><i class="fas fa-id-card"></i><span>Position</span></label>
+      <input type="text" id="position" required placeholder="Enter position"/>
+      
+      <label for="date"><i class="far fa-calendar-alt"></i><span>Date Applied</span></label>
+      <input type="date" id="date" required />
+      
+      <label for="status"><i class="fas fa-stream"></i><span>Status</span></label>
+      <select id="status" required>
+        <option value="applied">Applied</option>
+        <option value="interview">Interview Scheduled</option>
+        <option value="offer">Offer</option>
+        <option value="rejected">Rejected</option>
+      </select>
+      
+      <label for="notes"><i class="fas fa-pen"></i><span>Notes (optional)</span></label>
+      <textarea id="notes" rows="2" placeholder="Extra notes or comments"></textarea>
+      
+      <button type="submit"><i class="fas fa-plus"></i> Add Application</button>
+    </form>
+    <div id="toast"></div>
+    <h2 style="margin-top:30px;"><i class="far fa-folder-open"></i> Applications</h2>
+    <div id="appList"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
